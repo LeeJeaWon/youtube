@@ -33,7 +33,7 @@ const routes = {
     upload: UPLOAD,
     videoDetail: VIDEOS_DETAIL,
     editVideo: EDIT_VIDEO,
-    deleteVide: DELETE_VIDEO
+    deleteVideo: DELETE_VIDEO
 };
 
 
