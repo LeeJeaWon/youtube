@@ -12,7 +12,7 @@ const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/change-password";
 
 // videos
-const VIDEOS = "videos";
+const VIDEOS = "/videos";
 const UPLOAD = "/upload";
 const VIDEOS_DETAIL= "/:id";
 const EDIT_VIDEO = "/:id/edit";
