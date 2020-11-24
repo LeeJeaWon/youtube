@@ -1,4 +1,4 @@
-export const videos2 = [
+export const videos = [
     {
       id: 324393,
       title: "Video awesome",
