@@ -1,4 +1,5 @@
 // Global
+const BASE = "http://localhost:4000/";
 const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
@@ -26,6 +27,7 @@ const GITHUB = "/auth/github";
 const GITHUB_CALLBACK = "/auth/github/callback";
 
 const routes = {
+  base: BASE,
   home: HOME,
   join: JOIN,
   login: LOGIN,
