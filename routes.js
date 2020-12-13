@@ -1,5 +1,4 @@
 // Global
-const BASE = "http://localhost:4000/";
 const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
@@ -12,7 +11,6 @@ const USERS = "/users";
 const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/change-password";
-const ME = "/me";
 
 // videos
 const VIDEOS = "/videos";
@@ -27,7 +25,6 @@ const GITHUB = "/auth/github";
 const GITHUB_CALLBACK = "/auth/github/callback";
 
 const routes = {
-  base: BASE,
   home: HOME,
   join: JOIN,
   login: LOGIN,
@@ -67,8 +64,7 @@ const routes = {
     }
   },
   gitHub: GITHUB,
-  githubCallback: GITHUB_CALLBACK,
-  me: ME
+  githubCallback: GITHUB_CALLBACK
 };
 
 export default routes;
