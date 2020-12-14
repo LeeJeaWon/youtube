@@ -94,7 +94,7 @@ export const getEditProfile = (req, res) =>
 
 export const postEditProfile = async (req, res) => {
   const {
-    body: { name, email },
+    body: { name, email }, 
     file
   } = req;
   try {
@@ -106,7 +106,8 @@ export const postEditProfile = async (req, res) => {
     console.log(file.path);
     res.redirect(routes.me);
   } catch (error) {
-    res.redirect(routes.editProfile);
+    //res.redirect(routes.editProfile);
+    res.redirect(routes.me);
   }
 };
 

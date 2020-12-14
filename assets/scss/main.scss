@@ -9,7 +9,6 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
-
 main {
   width: 100%;
   max-width: 1200px;
@@ -22,14 +21,15 @@ textarea,
 .fileUpload {
   padding: 7px 10px;
   width: 100%;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
   font-size: 14px;
   color: $black;
   font-weight: 600;
   background-color: white;
   max-width: 320px;
   resize: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   &::placeholder {
     font-weight: 300;
     color: rgba(0, 0, 0, 0.7);
@@ -40,11 +40,9 @@ button {
   background-color: #3498db;
   color: white;
 }
-
 button.delete {
   background-color: $dark-red;
 }
-
 button,
 input[type="submit"] {
   cursor: pointer;
