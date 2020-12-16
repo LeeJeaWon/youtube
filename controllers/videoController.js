@@ -38,7 +38,7 @@ export const search = async (req, res) => {
 export const getUpload = (req, res) =>
   res.render("upload", { pageTitle: "Upload" });
 
-  export const postUpload = async (req, res) => {
+export const postUpload = async (req, res) => {
     const {
       body: { title, description },
       file: { path }
@@ -52,7 +52,7 @@ export const getUpload = (req, res) =>
     req.user.videos.push(newVideo.id);
     req.user.save();
     res.redirect(routes.videoDetail(newVideo.id));
-  };
+};
  
   
 /*============================================================================================= */

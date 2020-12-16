@@ -13,6 +13,7 @@ import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
 import routes from "./routes";
 import apiRouter from "./routers/apiRouter";
+import flash from "express-flash";
 
 import "./passport";
 
@@ -40,7 +41,10 @@ app.use(
       saveUninitialized: false,
       store: new CokieStore({ mongooseConnection: mongoose.connection })
     })
-  );
+);
+
+app.use(flash());
+
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -53,3 +57,10 @@ app.use(routes.videos, videoRouter);
 app.use(routes.api, apiRouter);
 
 export default app;
+
+
+
+/* 
+app.use :app.use 는 미들웨어 등록 순서에 따라 엔드 라우트 논리 또는 
+        중간 경로 논리를 실행하기 전에 미들웨어 또는 미들웨어 체인 (또는 다중 미들웨어) 을 등록하는 방법
+*/
